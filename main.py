@@ -10,4 +10,4 @@ if animal_type == "cat":
 if pet_color:
     # Generate and print the pet name
     response = langchain_helper.generate_pet_name(animal_type, pet_color)
-    st.write(f"You can name your {animal_type} as: {response['pet_name']}")
+    st.write(response['pet_name'])
